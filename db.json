@@ -1,0 +1,45 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "project 1",
+      "description": "description project1",
+      "tasks": [
+        {
+          "id": 1,
+          "title": "project 1",
+          "dateD": "2024/01/12",
+          "dateF": "2024/01/13",
+          "project": {
+            "id": 1,
+            "title": "project 1",
+            "description": "description project1",
+            "tasks": []
+          }
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "project 1",
+      "dateD": "2024/01/12",
+      "dateF": "2024/01/13",
+      "project": {
+        "id": 1,
+        "title": "project 1",
+        "description": "description project1",
+        "tasks": []
+      }
+    },
+    {
+      "title": "aaa",
+      "dateD": "1/12/2024",
+      "dateF": "3/12/2024",
+      "status": "To Do",
+      "project": "1",
+      "id": 2
+    }
+  ]
+}

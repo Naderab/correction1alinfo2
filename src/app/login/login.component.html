@@ -1,0 +1,19 @@
+<form [formGroup]="login">
+    Nom d'utilisateur : <input type="text" formControlName="username">
+    <div *ngIf="login.get('username')?.invalid 
+    && login.get('username')?.touched">
+        <p *ngIf="login.get('username')?.errors?.['required']">Nom d'utilisateur requis</p>
+        <p *ngIf="login.get('username')?.errors?.['minlength']">min length 3</p>
+
+    </div>
+    Mot de passe : <input type="text" formControlName="password">
+    <div *ngIf="login.get('password')?.invalid 
+            && login.get('password')?.touched">
+        <p *ngIf="login.get('password')?.errors?.['required']">Password requis</p>
+        <p *ngIf="login.get('password')?.errors?.['minlength']">min length 6</p>
+        <p *ngIf="login.get('password')?.errors?.['pattern']">Mot de passe doit commencer avec un caractere majuscule
+        </p>
+    </div>
+    <input type="submit" value="se connecter" (click)="goToProjects()" [disabled]="login.invalid">
+
+</form>

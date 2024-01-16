@@ -1,0 +1,6 @@
+<form [formGroup]="task">
+    Title : <input type="text" formControlName="title">
+    Date debut : <input type="text" formControlName="dateD">
+    Date fin : <input type="text" formControlName="dateF">
+    <input type="submit" value="Add task" (click)="addTask()">
+</form>
